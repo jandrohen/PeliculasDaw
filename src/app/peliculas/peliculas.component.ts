@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PeliculasComponent implements OnInit {
 
   peliculas: Array<any> = [
-    {id: '1', name: 'Avatar', directory: 'James Cameron'},
-    {id: '2', name: 'Titanic', directory: 'James Cameron'},
-    {id: '3', name: 'Interstellar', directory: 'Christopher Nolan'},
+    {id: '1', name: 'Avatar', director: 'James Cameron'},
+    {id: '2', name: 'Titanic', director: 'James Cameron'},
+    {id: '3', name: 'Interstellar', director: 'Christopher Nolan'},
   ]
   constructor() { }
 
