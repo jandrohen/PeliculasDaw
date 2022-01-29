@@ -16,3 +16,9 @@
     </div>
   </div>
 </nav>
+<h5 class="text-muted text-end">Películas Vistas</h5>
+<ul style="list-style: none" *ngIf="peliculasVistas.verListado()">
+  <li class="text-muted text-end " *ngFor="let pelicula of peliculasVistas.verListado()">
+    {{pelicula.name}}
+  </li>
+</ul>

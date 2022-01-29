@@ -1,7 +1,17 @@
 <ul>
-  <li *ngFor="let pelicula of peliculas">
-    <a [routerLink]="['/informacion', pelicula.id]">
-      {{pelicula.name}}
-    </a>
-  </li>
+  <div *ngIf="peliculas; else loader ">
+    <li *ngFor="let pelicula of peliculas">
+      <a (click)="agregarPelicula(pelicula)"
+         [routerLink]="['/informacion', pelicula.id]">
+        {{pelicula.name}}
+      </a>
+    </li>
+  </div>
+
 </ul>
+<ng-template #loader>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template>
+<div *ngIf="errorHttp"> Hubo un error en la carga...</div>
