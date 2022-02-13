@@ -11,6 +11,7 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { PeliculaclickedService } from './services/peliculaclicked.service';
+import { RenderejemploComponent } from './renderejemplo/renderejemplo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PeliculaclickedService } from './services/peliculaclicked.service';
     CabeceraComponent,
     PeliculasComponent,
     InicioComponent,
-    InformacionComponent
+    InformacionComponent,
+    RenderejemploComponent
   ],
   imports: [
     BrowserModule,

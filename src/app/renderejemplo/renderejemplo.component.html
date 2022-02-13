@@ -1,0 +1,10 @@
+<ul>
+   <li *ngFor="let peli of pelis"
+       style="list-style: none"
+       (click)="activeMethod(elementoDOM);"
+       (mouseover)="activeMethod3(elementoDOM)"
+       (mouseout)="activeMethod4(elementoDOM)"
+        #elementoDOM>
+        {{peli.name}}
+   </li>
+   </ul>
